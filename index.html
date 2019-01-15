@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://getbootstrap.com/examples/starter-template/# -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CSC281: Introduction to Computer Science II</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="updated-styles.css">
+    <style type="text/css">
+    table {
+        font-size: 12px;
+    }
+
+    table ul {
+        padding-left: 5px
+    }
+
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        padding-bottom: 10px;
+    }
+
+    img {
+        border: 1px solid black;
+    }
+
+    @media screen and (max-width: 700px)
+    /* Mobile */
+
+    {
+        table {
+            font-size: 8px;
+        }
+    }
+    </style>
+</head>
+<div class="container">
+    <div class="page-header">
+        <h1><center>Introduction to Computer Science II <br><small>[CSC 281 - Spring 2019]</small></center></h1>
+    </div>
+</div>
+<div class="container">
+    <center>
+        <h3>General Course Info</h3></center>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item"><b>Instructor:</b> Prof. Godwin <small>[godwin (at) american.edu]</small></li>
+                <li class="list-group-item"><b>First Class:</b> Tue Jan 15</li>
+                <li class="list-group-item"><b>Time/ Location:</b> Tue/Fri 9:45am-11:00am, DMTI 109</li>
+                <li class="list-group-item"><b>Office Hours:</b> <br>Tue/Fri 3-5pm<br> DMTI 112C</li>
+<!--                 <li class="list-group-item"><b>TA:</b> TBA</li>
+                <li class="list-group-item"><b>TA Office Hours:</b> TBA</li> -->
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            <p>This course is a continuation of problem solving and object-oriented programming. There will be more emphasis on larger programs built from modules. You will be introduced to abstract data structures: stacks, queues, graphs, and trees and their implementations and associated algorithms. We will discuss elementary numerical methods and the construction of a simple graphical user interface (GUI).</p>
+            <p>In this class, you will learn about:</p>
+            <dl>
+                <dt>Software Development Fundamentals</dt>
+                <dd>To be able to design and implement a Java program to model a real-world system, and subsequently analyze its behavior.</dd>
+                <dt>Programming Languages</dt>
+                <dd>To know and use basic Java programming constructs for object-oriented problem solving (e.g., classes, polymorphism, inheritance, interfaces). </dd>
+                <dt>Algorithms and Complexity</dt>
+                <dd>To appreciate the role of algorithms and data structures in problem solving and software design (e.g., objected-oriented design, lists, files, searching and sorting) </dd>
+                <dt>Software Engineering</dt>
+                <dd>To develop programming skills that can serve as a foundation for further study in computer science.</dd>
+                <dt>Social Issues and Professional Practice</dt>
+                <dd>Social implications of computing in a networked world and the impact of social media on individualism, collectivism and culture. </dd>
+            </dl>
+            <p><b>Academic integrity:</b> Unless explicitly stated otherwise, you are expected to do your assignments and work collaboratively with your assigned teammate(s), but not share code with other teams in the class. It is not appropriate to find existing code, modify it and submit it as your own work. Code submitted for projects may be compared to existing databases of example student work to verify authenticity. Exams and quizzes will be an independent effort. If in doubt, confer with your instructor.</p>
+            <p>All students are expected to adhere to the <a href='https://www.american.edu/academics/integrity/code.cfm'>American University Honor Code. </a> </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <a name="overview"></a>
+        <div class="panel-heading">
+            <center>
+                <h3>Course Schedule</h3></center>
+        </div>
+        <div class="panel-body">
+            <p>Readings should be completed <strong>after</strong> each lecture. All readings are from the Liang text unless stated otherwise.</p>
+        </div>
+        <!-- Table -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>Jan-15 Welcome and Introduction to Java
+                      <br><span class="label label-info">Read</span> Ch 1.1 - 1.10.4
+
+                    <td></td>
+                    <td></td>
+                    <td>Jan-18 Elements of Java Programming
+                      <br><span class="label label-info">Read</span> Ch 2
+                      <br><span class="label label-warning">Submit</span> P0
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> </td><td>Jan-22 Selections
+                        <br><span class="label label-info">Read</span> Ch 3
+                    </td>
+                    <td></td>
+                    <td> </td>
+                    <td>Jan-25 Math Functions
+                      <br><span class="label label-info">Read</span> Ch 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> </td>
+                    <td>Jan-29 Loops
+                      <br><span class="label label-info">Read</span> Ch 5
+                    </td>
+                    <td> </td>
+
+                    <td>
+                    </td>
+                    <td>Feb-1 Methods
+                      <br><span class="label label-info">Read</span> Ch 6
+                      <br><span class="label label-warning">Submit</span> P1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> </td>
+                    <td>Feb-5 Arrays
+                      <br><span class="label label-info">Read</span> Ch 7 &amp; 8
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>Feb-8
+                      <br><span class="label label-danger">Exam</span> Exam 1
+                    </td>
+
+                </tr>
+                <tr>
+                  <td colspan="6"><hr/></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td> </td>
+                    <td>Feb-12 Objects and Classes
+                      <br><span class="label label-info">Read</span> Ch 9
+                    </td>
+                    <td>&nbsp;</td>
+                    <td> </td>
+                    <td>Feb-15 Object-Oriented Thinking
+                      <br><span class="label label-info">Read</span> Ch 10
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td> </td>
+                    <td>Feb-19 Inheritance and Polymorphism
+                      <br><span class="label label-info">Read</span> Ch 11
+                    </td>
+
+                    <td> </td>
+                    <td></td>
+                    <td>Feb-22 Abstract Classes
+                      <br><span class="label label-info">Read</span> Ch 13
+                      <br><span class="label label-warning">Submit</span> P2
+                      </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td> </td>
+                    <td>Feb-26 JavaFX
+                      <br><span class="label label-info">Read</span> Ch 14
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>Mar-1 Events and Animation
+                      <br><span class="label label-info">Read</span> Ch 15
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td> </td>
+                    <td>Mar-5 UI Design
+                      <br><span class="label label-info">Read</span> Ch 16
+                    </td>
+                    <td> </td>
+                    <td>&nbsp;</td>
+                    <td>Mar-8
+                        <br><span class="label label-danger">Exam</span> Exam 2
+                    </td>
+                </tr>
+                <tr>
+                  <td colspan="6"><hr/></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td></td>
+                    <td>Mar-12
+                      <br><span class="label label-success">Break</span> Spring Break
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>Mar-15
+                        <br><span class="label label-success">Break</span> Spring Break
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td> </td>
+                    <td>Mar-19 Recursion
+                      <br><span class="label label-info">Read</span> Ch 18
+                    </td>
+                    <td> </td>
+
+                     <td></td>
+                    <td>Mar-22 Generics
+                        <br><span class="label label-info">Read</span> Ch 19
+                        <br><span class="label label-warning">Submit</span> P3
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td> </td>
+                    <td>Mar-26 Data Structures
+                      <br><span class="label label-info">Read</span> Ch 20
+                    </td>
+                    <td></td>
+                    <td> </td>
+                    <td>Mar-29 Sets and Maps
+                      <br><span class="label label-info">Read</span> Ch 21
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td> </td>
+                    <td>Apr-2 Algorithms
+                      <br><span class="label label-info">Read</span> Ch 22
+                    </td>
+
+                    <td> </td>
+                    <td></td>
+                    <td>Apr-5
+                      <br><span class="label label-danger">Exam</span> Exam 3
+                    </td>
+
+                </tr>
+                <tr>
+                  <td colspan="6"><hr/></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td></td>
+                    <td>Apr-9 Sorting
+                      <br><span class="label label-info">Read</span> Ch 23
+                    </td>
+                    <td></td>
+                    <td>
+                      <!-- <br><span class="label label-success">Break</span> Thanksgiving -->
+                    </td>
+                    <td>Apr-12 Hashing
+                      <br><span class="label label-info">Read</span> Ch 27
+                      <br><span class="label label-warning">Submit</span> P4  </td>
+                      <!-- <br><span class="label label-success">Break</span> Thanksgiving -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td>Apr-16 Graphs
+                      <br><span class="label label-info">Read</span> Ch 28
+                    </td>
+                    <td> </td>
+                    <td></td>
+                    <td>Apr-19 Weighted Graphs
+                      <br><span class="label label-info">Read</span> Ch 29
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td></td>
+                    </td>
+                    <td>Apr-23 Binary Search Trees
+                      <br><span class="label label-info">Read</span> Ch 25
+                    </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>Apr-26 Adelson-Velsky &amp; Landis (AVL) Trees
+                      <br><span class="label label-info">Read</span> Ch 26
+                      <br><span class="label label-warning">Submit</span> P5
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td></td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                      <!-- <br>DMTI (MYERS) 217 -->
+                    </td>
+                    <td>May-3 08:10AM-10:40AM
+                      <br><span class="label label-danger">Exam</span> <a href="https://www.american.edu/provost/registrar/finalexamschedule/spring-2019.cfm"> Final Exam</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <center>
+        <h2>Syllabus</h2></center>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Required Textbooks</h3>
+            <div class="row">
+                <div class="col-xs-3"><img class="img-responsive bookCover" src="intro11eComprehensive.jpg" width="200px" alt="" /></div>
+                <div class="col-sm-8"><strong>Title: </strong>Introduction to Java Programming and Data Structures, 11th Comprehensive Edition
+                    <br><strong>Author: </strong>Y. Daniel Liang
+                    <br><strong>ISBN-10: </strong>9780134670942
+                </div>
+            </div>
+            <h3>Grading</h3>
+            <table class="table table-hover">
+                <tr>
+                    <th>Component</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <td>Class Participation</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Attendance</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>HW Projects</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Exams</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Quizzes</td>
+                    <td>10%</td>
+                </tr>
+            </table>
+
+
+            <h3> Class Participation </h3>
+            <p>It is expected that students will come to class, be prepared by doing the readings, and will pay attention and participate in discussions. Participation will be scored both by instructor review of the quality of work during in-class exercises and peer-assessment of your contributions to the group.</p>
+            <p>Any questions regarding general rules and regulations should first be directed to the American University <a target="_blank" href="https://www.american.edu/provost/registrar/university_catalog.cfm">Catalog</a>. If you still have questions, please seek out the TA or Instructor during the posted office hours.</p>
+            <h4>Use of Computers and Cell Phones in Class</h4>
+            <p><a href="http://pss.sagepub.com/content/early/2014/04/22/0956797614524581.abstract">Educational research</a> shows that taking notes by hand on paper will lead to better retention of material than taking notes by typing. Also, in the past classrooms have had issues with students not only not paying attention but also disrupting others during class-- by playing games, by accidentally clicking on a video with the sound on, etc.</p>
+            <p>If you have a laptop, you should bring it to class. Do not use it for in-class assignments unless you are directly advised to do so by the instructor.</p>
+            <p>Please do not use your cell phone in class.</p>
+            <h3>Attendance</h3>
+            <p>Students are required to attend all lectures. If you need to miss class for any reason, you are allowed two excused absences - no questions asked. Prolonged absences must be discussed with the instructor and are not guaranteed to be excused.</p>
+            <p>Students who are late to class and miss the quiz will receive half credit for attendance on that day.</p>
+            <h3>HW Projects</h3>
+            <p>Homeworks will be graded on a list of criteria (specified on the assignment) such as accuracy of code input/output, completeness, insight into technical issues, insight into social issues, etc. For each criterion, you will receive either a check plus, check, or check minus. Most criterion will receive a check. A plus means "you impressed me." A minus means the assignment is incomplete, incorrect, or sloppy in some fashion with respect to that criterion. Pluses and minuses are combined to give your grade for the assignment. For most assignments, you start out half way between a B+ and A-. One plus makes it an A-; one minus makes it a B+. These are general guidelines to let you know what to expect. Grading on specific assignments may differ.</p>
+            <p>All assignments will be submitted through the class Github system, which will be introduced in early lectures.</p>
+            <h4>Late Submission</h4>
+            <p>Assignments are due at 5pm on the specified date unless stated otherwise. Late assignments will be penalized at a rate of 3 pts (one grade step: A becomes A-) per day. Assignments more than one week late will not be accepted.</p>
+            <p>Over the course of the term, you have three "late days" where work may be late with no explanation needed. There is no need to let me know when you are using them, they will be applied automatically as needed. If you are working in a team for an assignment (as you will most often be) a late submission uses a late day from both team members.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Exams</h3>
+            <p>Exams cover the material from the lectures, projects, and reading. While not necessarily cumulative, each exam will require understanding many of the concepts covered in the preceding exams. Exams consist of multiple choice, short answer, and long answer questions. Each exam, including the final, is weighted equally.</p>
+            <p>Exams are typically curved based on class performance. After you are handed back your graded exam, you will have an opportunity to return it with corrections for partial credit on missed questions.</p>
+             <h3>Quizzes</h3>
+            <p>A short five-minute quiz is administered at the beginning of each lecture. These are closed book and closed notes. Each quiz consists of two questions from the previous lecture or reading. You have the option of answering either question to receive full credit.</p>
+            <p>Students begin the semester with a 100 quiz score. For each daily quiz in which they are not able to answer either question, this score will be reduced by -3. On any day that a student successfully answers both of the quiz questions, the score will be increased by 3 points. If you have a 100 already, and can successfully answer both questions, you can effectively "bank" the +3 for a later day in which you are unable to complete the quiz.</p>
+            <h3>Letter Grades</h3>
+            <table class="table table-hover">
+                <tr>
+                    <th>Range</th>
+                    <th>Letter</th>
+                </tr>
+                <tr>
+                    <td>&gt;=93</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>&gt;=90</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>&gt;=87</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>&gt;=83</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>&gt;=80</td>
+                    <td>B-</td>
+                </tr>
+                <tr>
+                    <td>&gt;=77</td>
+                    <td>C+</td>
+                </tr>
+                <tr>
+                    <td>&gt;=73</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>&gt;=70</td>
+                    <td>C-</td>
+                </tr>
+                <tr>
+                    <td>&gt;=60</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>&lt;60</td>
+                    <td>F</td>
+                </tr>
+            </table>
+            <h3>Students with Disabilities</h3>
+            <p>If you wish to receive accommodations for a disability, please notify me with a letter from the Academic Support and Access Center. As accommodations are not retroactive, timely notification at the beginning of the semester, if possible, is strongly recommended. To register with a disability or for questions about disability accommodations, contact the Academic Support and Access Center at 202-885-3360 or asac@american.edu, or drop by the ASAC in MGC 243.</p>
+            <h3>Academic Support</h3>
+            <p>All students may take advantage of the Academic Support and Access Center (ASAC) for individual academic skills counseling, workshops, Tutoring, peer tutor referrals, and Supplemental Instruction. The ASAC is located in Mary Graydon Center 243.  Additional academic support resources available at AU include the Bender Library, the Writing Center (located in the Library), the Math Lab (located in Don Meyers Technology and Innovation Building), and the Center for Language Exploration, Acquisition, & Research (CLEAR) in Anderson Hall. A more complete list of campus-wide resources is available in the ASAC.</p>
+        </div>
+    </div>
+    <div>
+        <h3>Acknowledgments</h3> Course design by Alex Godwin at American University. Assignments and ideas on this syllabus build from the work of many other instructors in computing, especially Donna Dietz and Adam Knapp at American University,  John Stasko at the Georgia Institute of Technology, and Dave Reed at Creighton University. This course utilizes in-class POGIL materials that builds on the work of Clif Kussmaul at Muhlenberg College and Tammy VanDeGrift at the University of Portland.
+    </div>
+</div>
+</div>
+</div>
+<br>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--     <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> -->
+<!-- <iframe id="rdbIndicator" width="100%" height="270" border="0" src="./index_files/indicator.htm" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe>
+    <center>
+      <script type="text/javascript">
+      var sc_project=9652407;
+      var sc_invisible=0;
+      var sc_security="a9e6dcaf";
+      var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+      document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+      </script>
+      <noscript><div class="statcounter"><a title="shopify
+      analytics" href="http://statcounter.com/shopify/"
+      target="_blank"><img class="statcounter"
+      src="http://c.statcounter.com/9652407/0/a9e6dcaf/0/"
+      alt="shopify analytics"></a></div></noscript>
+    </center> -->
+</body>
+
+</html>

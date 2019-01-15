@@ -1,0 +1,68 @@
+body{
+		font-family: 'Arvo', serif;
+}
+
+a{
+	color:red;
+}
+
+a:hover { 
+    color: purple;
+    /*background-color: purple;*/
+}
+
+h1, h2, h3, h4{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 20px;				
+}	
+
+h4 {
+	margin-bottom: 0px;		
+}
+
+.details h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 44px;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+	.details h1 {
+		font-size: 20px;
+	}
+}
+
+/*@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}	*/
+
+strong {
+    color: purple;
+}
+
+.details span{
+	font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    /*font-family: SegoeUISemiboldWeb, Segoe UI Semibold, Helvetica, Verdana, Sans-Serif;
+    font-weight: bold;*/
+}
+
+.portfolio-item {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin: 1em;
+    margin-top:25px;    
+}
+
+.details {font-size: 75%;}
+
+.portfolio-item {
+    /*display: inline-block;*/
+    width: 400px;
+    height: 300px;
+    margin: 1em;
+    margin-top:25px;    
+  }
